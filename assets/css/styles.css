@@ -1,0 +1,28 @@
+#search {
+  right: 35%;
+  bottom: 50%;
+  position: absolute;
+  padding-left: 20px;
+}
+
+#search #searchButton {
+  width: 100px;
+}
+
+#search #searchAction {
+  width: 100px;
+  min-height: 50px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+  background-image: url("../imgs/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding-left: 40px;
+}
