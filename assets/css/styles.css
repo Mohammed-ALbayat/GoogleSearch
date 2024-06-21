@@ -7,6 +7,7 @@
 
 #search #searchButton {
   width: 100px;
+  color: azure;
 }
 
 #search #searchAction {
@@ -20,7 +21,7 @@ input[type="text"] {
   margin: 8px 0;
   box-sizing: border-box;
   background-color: white;
-  background-image: url("../imgs/searchicon.png");
+  background-image: url("../imgs/searchIcon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   background-size: 25px;
