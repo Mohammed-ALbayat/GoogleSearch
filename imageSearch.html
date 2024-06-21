@@ -7,25 +7,50 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image search</title>
   </head>
   <body>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Back</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">
-          Created By Mohammad Albayat
-        </a>
-      </li>
-    </ul>
-    <form action="https://google.com/search?" target="_blank" rel="search">
-      <input type="text" name="q" autofocus required />
-      <input type="hidden" name="udm" value="2" />
-      <input type="submit" value="Google Search" />
-    </form>
+    <div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Back</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">
+            Created By Mohammad Albayat
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="search-space">
+      <img
+        id="search-space-googleIcon"
+        src="assets/imgs/google.png"
+        alt="Google Icon"
+        height="92"
+        width="272"
+      />
+      <form action="https://google.com/search?" target="_blank" rel="search">
+        <input
+          id="search-space-searchBar"
+          type="text"
+          name="q"
+          autofocus
+          required
+          placeholder="Search about something"
+        />
+        <input type="hidden" name="udm" value="2" />
+        <input
+          type="submit"
+          value="Image Search"
+          id="search-space-searchButton"
+          class="btn"
+        />
+      </form>
+    </div>
   </body>
 </html>
