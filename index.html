@@ -13,44 +13,56 @@
     <title>Search</title>
   </head>
   <body>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="advancedSearch.html">Advanced Search</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="imageSearch.html">Image Search</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">
-          Created By Mohammad Albayat
-        </a>
-      </li>
-    </ul>
-    <div id="search">
+    <div class="Nav">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="advancedSearch.html">Advanced Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="imageSearch.html">Image Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">
+            Created By Mohammad Albayat
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="search-space">
+      <img
+        id="search-space-googleIcon"
+        src="assets/imgs/google.png"
+        alt="Google Icon"
+        height="92"
+        width="272"
+      />
       <form action="https://google.com/search" target="_blank" rel="search">
         <input
+          id="search-space-searchBar"
           type="text"
           name="q"
           autofocus
           required
           placeholder="Search about something"
         />
-        <input
-          id="searchButton"
-          type="submit"
-          value="&#128270;"
-          class="btn btn-primary"
-        />
-        <button
-          id="searchAction"
-          type="submit"
-          class="btn btn-secondary"
-          data-bs-toggle="tooltip"
-          data-bs-placement="bottom"
-          data-bs-title="Go to First Result"
-        >
-          I’m Feeling Lucky
-        </button>
+        <div>
+          <input
+            id="search-space-searchButton"
+            class="btn"
+            type="submit"
+            value="&#128270;"
+          />
+          <button
+            id="search-space-searchAction"
+            type="submit"
+            class="btn"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Go to First Result"
+          >
+            I’m Feeling Lucky
+          </button>
+        </div>
       </form>
     </div>
   </body>
