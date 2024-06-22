@@ -7,6 +7,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>advancedSearch</title>
@@ -22,18 +23,59 @@
         </a>
       </li>
     </ul>
+    <div id="advancedSearch">Advanced Search</div>
+    <div id="advancedSearch-line"></div>
     <form action="https://google.com/search" target="_blank">
-      <input type="text" name="as_q" placeholder="All of these words" />
-      <input
-        type="text"
-        name="as_epq"
-        placeholder="This word or full sentence"
-      />
-      <input type="text" name="as_oq" placeholder="Any of these words" />
-      <input type="text" name="as_eq" placeholder="Nothing from these words" />
-      <input type="number" name="as_nlo" placeholder="from" />
-      <input type="number" name="as_nhi" placeholder="to" />
-      <input type="submit" value="Google Search" />
+      <div class="advancedSearch-space">
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="field1" class="col-form-label"
+              >All of these words</label
+            >
+          </div>
+          <div class="col-auto">
+            <input type="text" id="field1" class="form-control" name="as_q" />
+          </div>
+        </div>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="field2" class="col-form-label"
+              >This word or full sentence
+            </label>
+          </div>
+          <div class="col-auto">
+            <input type="text" id="field2" class="form-control" name="as_epq" />
+          </div>
+        </div>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="field3" class="col-form-label"
+              >Any of these words</label
+            >
+          </div>
+          <div class="col-auto">
+            <input type="text" id="field3" class="form-control" name="as_oq" />
+          </div>
+        </div>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="field4" class="col-form-label"
+              >Nothing from these words</label
+            >
+          </div>
+          <div class="col-auto">
+            <input type="text" id="field4" class="form-control" name="as_eq" />
+          </div>
+        </div>
+        <div class="search-space">
+          <input
+            id="advancedSearch-button"
+            class="btn"
+            type="submit"
+            value="Google Search"
+          />
+        </div>
+      </div>
     </form>
   </body>
 </html>
